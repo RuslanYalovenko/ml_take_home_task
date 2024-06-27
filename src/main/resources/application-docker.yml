@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: sugar_home_task
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      auto-offset-reset: earliest
+  data:
+    redis:
+      connect-timeout: 2000
+      host: redis-weather-store
+      port: 6379
+
+server:
+  servlet:
+    context-path: /api
+
+kafka:
+  topic:
+    location:
+      weather: location-weather

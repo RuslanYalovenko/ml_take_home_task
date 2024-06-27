@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: sugar_home_task
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+  data:
+    redis:
+      connect-timeout: 2000
+      host: 127.0.0.1
+      port: 6379
+
+server:
+  servlet:
+    context-path: /api
+
+kafka:
+  topic:
+    location:
+      weather: location-weather
+
+openweathermap:
+  api:
+    url: https://api.openweathermap.org/data/2.5/weather
+    key: 112db33b75dda0249064e961a46ca800
+
