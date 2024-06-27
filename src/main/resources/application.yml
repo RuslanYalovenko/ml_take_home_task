@@ -22,5 +22,5 @@ kafka:
 openweathermap:
   api:
     url: https://api.openweathermap.org/data/2.5/weather
-    key: 112db33b75dda0249064e961a46ca800
+    key:
 
